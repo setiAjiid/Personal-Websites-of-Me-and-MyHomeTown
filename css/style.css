@@ -197,13 +197,6 @@ section {
 
 
 /* Hometown Image */
-.home-img img {
-    object-fit: cover;
-    width: 28vw;
-    max-width: 300px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
-}
 
 .map-container {
     position: relative;
