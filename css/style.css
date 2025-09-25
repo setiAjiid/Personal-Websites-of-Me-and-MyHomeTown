@@ -107,6 +107,149 @@ section {
     padding: 5rem 9% 5rem;
 }
 
+/* Food List Style */
+.food-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.food-item img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    border: 2px solid #b74b4b;
+}
+
+.food-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #b74b4b;
+}
+
+.food-item p {
+    font-size: 1.4rem;
+    color: #ddd;
+}
+
+@media (max-width: 600px) {
+    .food-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .food-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tourist Grid */
+.tourist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tourist-card {
+    background-color: #161616;
+    border: 1px solid #b74b4b;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tourist-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tourist-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 2rem;
+    color: #b74b4b;
+}
+
+.tourist-card p {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    color: #ddd;
+}
+
+.tourist-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+
+/* Hometown Image */
+.home-img img {
+    object-fit: cover;
+    width: 28vw;
+    max-width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 1rem;
+}
+
+/* Profile Section */
+.profile-container {
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 9%;
+}
+
+.card {
+    background: #111;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(183, 75, 75, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: #b74b4b;
+}
+
+.card ul {
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.card ul li {
+    margin-bottom: 1rem;
+}
 /* Home Section */
 .home {
     display: flex;
@@ -284,150 +427,6 @@ span {
         margin-top: 4rem;
     }
 }
-
-/* Profile Section */
-.profile-container {
-    display: grid;
-    gap: 2rem;
-    padding: 4rem 9%;
-}
-
-.card {
-    background: #111;
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(183, 75, 75, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.section-title {
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
-    color: #b74b4b;
-}
-
-.card ul {
-    list-style: none;
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color: #ddd;
-}
-
-.card ul li {
-    margin-bottom: 1rem;
-}
-
-/* Hometown Image */
-.home-img img {
-    object-fit: cover;
-    width: 28vw;
-    max-width: 300px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
-}
-
-.map-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 1rem;
-}
-
-/* Food List Style */
-.food-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.food-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
-    border-bottom: 1px solid #333;
-}
-
-.food-item img {
-    width: 120px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 0.8rem;
-    border: 2px solid #b74b4b;
-}
-
-.food-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: #b74b4b;
-}
-
-.food-item p {
-    font-size: 1.4rem;
-    color: #ddd;
-}
-
-@media (max-width: 600px) {
-    .food-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .food-item img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Tourist Grid */
-.tourist-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.tourist-card {
-    background-color: #161616;
-    border: 1px solid #b74b4b;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tourist-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.tourist-card h3 {
-    margin: 1rem 0 0.5rem;
-    font-size: 2rem;
-    color: #b74b4b;
-}
-
-.tourist-card p {
-    font-size: 1.4rem;
-    padding: 0 1rem;
-    color: #ddd;
-}
-
-.tourist-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 25px #b74b4b;
-}
-
 
 /* Menu button hidden di desktop */
 .menu-btn {
